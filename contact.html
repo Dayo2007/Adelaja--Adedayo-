@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Adelaja Adedayo Dele</title>
+</head>
+<body>
+
+    <header>
+        <h1>Adelaja Adedayo Dele</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>If you have questions regarding coursework, research proposals, or Linux administration, please use the form below.</p>
+
+            <!-- Semantic Form Layout -->
+            <form action="process.php" method="POST">
+
+                <p>
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" required>
+                </p>
+
+                <p>
+                    <label for="emailAddress">Babcock Email Address:</label><br>
+                    <input type="email" id="emailAddress" name="emailAddress" required>
+                </p>
+
+                <p>
+                    <label for="inquiryType">Type of Inquiry:</label><br>
+                    <select id="inquiryType" name="inquiryType">
+                        <option value="coursework">IFT 301 Coursework</option>
+                        <option value="research">Thesis / Research Guidance</option>
+                        <option value="networking">Enterprise Networking Setup</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Samuel Idowu. Built for IFT 301.</p>
+    </footer>
+
+</body>
+</html>
